@@ -1,0 +1,59 @@
+body {
+  font-weight: normal;
+  font-size: 14px; //1em = 14px; 3em = 42px; 1.28em = 18px; FONTEpx/14px = FONTEem
+  line-height:1.4;
+  font-family: sans-serif;
+  color: $color-base;
+  // -webkit-font-smoothing: antialiased;
+  //         font-smoothing: antialiased;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* headings --------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+h1 { font-size: 3.0em; }
+h2 { font-size: 2.6em; }
+h3 { font-size: 2.2em; }
+h4 { font-size: 1.8em; }
+h5 { font-size: 1.4em; }
+h6 { font-size: 1.1em; }
+
+/* links ------------------------ */
+
+a {
+  text-decoration: none;
+  color: $color-gray-dark;
+  &:visited { color: $color-gray-dark; }
+  &:hover   { color: $color-gray-dark; }
+  &:focus   { color: $color-gray-dark; }
+  &:active  { color: $color-gray-dark; }
+}
+
+/* classes ------------------------ */
+
+.centralize {
+  text-align:center;
+}
+
+.hide_text {
+  text-indent: -9999px;
+  display: block;
+}
+
+.nav {
+  li {
+    display: inline-block;
+  }
+}

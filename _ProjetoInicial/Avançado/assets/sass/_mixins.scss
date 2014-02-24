@@ -1,0 +1,65 @@
+// respond to
+@mixin respond-to($type, $query) { //@include respond-to(max-width, $tablet-portrait) { CSS }
+  @media($type: $query) {
+    @content;
+  }
+}
+
+// sprite ---------------------------------- @include sprite(nome_arquivo);
+
+@mixin sprite($name, $hover: false, $active: false) {
+  @include _sprite($name, $sprite, $hover, $active);
+}
+
+@mixin _sprite($name, $sprite, $hover, $active, $dimensions: true, $pad: 0) {  
+  @if $dimensions == true {
+    @include sprite-dimensions($sprite, $name);
+  }
+  background-image: sprite-url($sprite);
+  background-position: sprite-position($sprite, $name, -$pad, -$pad);
+  background-repeat: no-repeat;
+
+  @if $hover == true {
+    $name_hover: $name + -hover;
+    &:hover {
+      background-position: sprite-position($sprite, $name_hover, -$pad, -$pad);
+    }
+  }
+  @if $active == true {
+    $name_active: $name + -active;
+    &:active {
+      background-position: sprite-position($sprite, $name_active, -$pad, -$pad);
+    }
+  }
+  
+  @if $pad > 0 {
+    padding: $pad;
+  }
+}
+
+// css3 ----------------------------------
+
+@mixin line-shadow-down($color) {
+  -moz-box-shadow: 0px 1px 0px $color;
+  -webkit-box-shadow: 0px 1px 0px $color;
+  box-shadow: 0px 1px 0px $color;
+}
+
+@mixin no-shadow {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin transition($seconds, $type) {
+  transition:All $seconds $type;
+  -webkit-transition:All $seconds $type;
+  -moz-transition:All $seconds $type;
+  -o-transition:All $seconds $type;
+}

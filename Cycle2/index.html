@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+
+	<title>Padrão</title>
+	<meta charset="utf-8">
+
+	<!-- styles
+	======================================================== -->
+	<!-- Style -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+
+	<!-- Module
+	======================================================== -->
+	<div class="l-container cf">
+
+		<h1>Slider</h1>
+
+		<div class="cycle-slideshow" 
+        data-cycle-fx="scrollHorz"
+        data-cycle-pause-on-hover="true"
+        data-cycle-timeout="1000"
+        data-cycle-next="#next"
+        data-cycle-prev="#prev"
+        data-cycle-manual-fx="scrollHorz"
+        data-cycle-manual-speed="300"
+        data-cycle-pager="#pager"
+        >
+
+        <img src="assets/img/modules/pug.jpg">
+        <img src="assets/img/modules/pug2.jpg">
+
+    </div><!-- .cycle-slideshow -->
+
+    <a href="#" id="prev">Voltar</a>
+    <a href="#" id="next">Avançar</a>
+
+	</div><!-- .l-container .cf -->
+
+	<!-- javascript
+	======================================================== -->
+	<!-- jquery jquery.com -->
+	<script src="assets/js/jquery.js?v=1.11.0"></script>
+	<!-- cycle2 slider http://jquery.malsup.com/cycle2/ -->
+	<script src="assets/js/jquery.cycle2.js"></script>
+
+</body>
+</html>

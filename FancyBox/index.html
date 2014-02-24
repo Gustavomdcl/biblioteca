@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+
+	<title>Fancy Box</title>
+	<meta charset="utf-8">
+
+	<!-- styles
+	======================================================== -->
+	<!-- Style -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- Fancy Box http://fancybox.net/ -->
+	<link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+</head>
+
+<body>
+
+	<!-- Module
+	======================================================== -->
+	<div class="l-container cf">
+
+		<h1>Abrir uma Div</h1>
+		<a href="#content_form" class="modal">Abrir</a>
+		<div id="content_form" class="modal-content" style="width:654px;height:388px;">
+			<h2>Olá</h2>
+		</div>
+
+		<h1>Abrir uma Galeria</h1>
+		<a rel="galeria01" href="assets/img/modules/pug.jpg" title="Lorem ipsum dolor sit amet" class="modal"><img alt="Imagem" src="assets/img/modules/pug.jpg" width="200px"></a>
+		<a rel="galeria01" href="assets/img/modules/pug.jpg" title="Lorem ipsum dolor sit amet" class="modal"><img alt="Imagem" src="assets/img/modules/pug.jpg" width="200px"></a>
+
+		<h1>Abrir uma Imagem Externa</h1>
+		<a href="javascript:;" data-modalimg="assets/img/modules/pug.jpg" class="modal-img">Abrir</a>
+
+	</div><!-- .l-container .cf -->
+
+	<!-- javascript
+	======================================================== -->
+	<!-- jquery jquery.com -->
+	<script src="assets/js/jquery.js?v=1.11.0"></script>
+	<!-- fancy box http://fancybox.net/ -->
+	<script type="text/javascript" src="assets/js/jquery.fancybox.js?v=2.1.5"></script>
+	<script type="text/javascript">
+    $(document).ready(function() {
+      $('.modal').fancybox();
+      $(".modal-img").click(function() {
+        $.fancybox.open($(this).data('modalimg'));
+      });
+    });
+  </script>
+
+</body>
+</html>
