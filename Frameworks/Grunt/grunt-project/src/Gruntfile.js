@@ -2,11 +2,15 @@
 
 module.exports = function( grunt ) {
 
+  require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
+
   grunt.initConfig({
-    // Watch
+
+    // configuracoes das tarefas
+
     watch: {
       css: {
-        files: [ '../assets/scss/**/*' ],
+        files: '../assets/sass/**/*' ,
         tasks: [ 'compass' ]
       },
       js: {
@@ -18,12 +22,19 @@ module.exports = function( grunt ) {
     compass: {
       dist: {
         options: {
-          force: true,
-          config: 'config.rb',
-          outputStyle: 'compressed'
+          /*force: true,
+          config: '../assets/config.rb',
+          outputStyle: 'compressed'*/
+          sassDir: '../assets/sass',
+          cssDir: '../assets/css',
+          imagesDir: '../assets/img',
+          boring: false,
+          outputStyle: 'compressed',
         }
       }
     },
+
+    // Concat and minify javascripts
     uglify: {
       options: {
         mangle: false
@@ -31,18 +42,16 @@ module.exports = function( grunt ) {
       dist: {
         files: {
           '../build/js/app.min.js': [
-            '../assets/js/app.js'
+            '../assets/js/app.js',
+            '../assets/js/jquery.js',
+            '../assets/js/jquery.suiting.js',
+            '../assets/js/modernizr.js'
           ]
         }
       }
     },
-    // configuracoes das tarefas
 
   });
-
-  // carregando plugins
-  require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
-  grunt.loadNpmTasks( 'plugin-name' );
 
   // registrando tarefas
   grunt.registerTask( 'default', [ 'watch' ] );
