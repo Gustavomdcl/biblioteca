@@ -40,7 +40,7 @@ http://tympanus.net/codrops/2013/12/30/svg-drawing-animation/
 
 .line-drawing path {
 	fill: none;
-	stroke: white;
+	stroke: black;
 	stroke-width: 3;
 }
 
