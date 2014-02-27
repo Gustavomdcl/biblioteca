@@ -1,0 +1,32 @@
+// colors ----------------------------------
+
+$color-gray:          #999999;
+$color-gray-light:    #CCCCCC;
+$color-gray-lighter:  #E6E6E6;
+$color-gray-dark:     #444444;
+$color-gray-darker:   #111111;
+
+$color-white:         #FFFFFF;
+$color-black:         #000000;
+$color-red:           red;
+$color-green:         green;
+$color-blue:          blue;
+
+$color-base:          $color-gray-dark;
+
+// layout ----------------------------------
+
+$num_columns:             12;
+$col-padding:             5px 10px;
+$container-max-width:     960px;
+
+// line breaks -----------------------------
+
+$mobile-portrait:     320px;
+$mobile-landscape:    480px;
+$tablet-portrait:     768px;
+$tablet-landscape:    1024px;
+
+// sprites ---------------------------------
+
+//$sprite: sprite-map('sprite/*.png'); //@include sprite(nome_arquivo);
