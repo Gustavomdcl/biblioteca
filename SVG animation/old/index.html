@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" class="demo-drawings no-js">
+<html lang="en" class="no-js">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/svg-animation.css" />
 		<!--[if IE]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+		<style>
+		body{background:#F17370;}
+		</style>
 	</head>
 	<body>
-		<div class="container">
-			<div id="main" class="main">
+
+			<div id="svgdraw">
 				<figure>
-					<div class="drawings">
+					<div class="svgdrawings">
 						<img class="illustration" src="img/cao-gordo.png" alt="iPhone Illustration" />
 						<svg class="line-drawing" id="imga" width="100%" height="600" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 792">
 							<path class="line-round" stroke-miterlimit="10" d="M274,345.5c0,0-1.5,6.25-6.25,4.5s-19.5-12-26.5-11.75
@@ -40,10 +41,10 @@
 							S193.846,479.243,192.5,481.25z"/>
 							<path class="stroke-medium" stroke-miterlimit="10" d="M248.75,331.25c12.5-7.5,43.75-26,77.5-19.25s72,39.179,76.75,74.214"/>
 						</svg>
-					</div>
+					</div><!-- .svgdrawings -->
 				</figure>
-			</div>
-		</div><!-- /container -->
+			</div><!-- #svgdraw -->
+
 		<script src="js/classie.js"></script>
 		<script src="js/svganimations.js"></script>
 	</body>

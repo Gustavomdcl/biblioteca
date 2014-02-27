@@ -137,7 +137,7 @@
 	}
 	
 	function init() {
-		var svgs = Array.prototype.slice.call( document.querySelectorAll( '#main svg' ) ),
+		var svgs = Array.prototype.slice.call( document.querySelectorAll( '#svgdraw svg' ) ),
 			svgArr = new Array(),
 			didScroll = false,
 			resizeTimeout;
