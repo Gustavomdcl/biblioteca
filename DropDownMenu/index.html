@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+
+	<title>Padrão</title>
+	<meta charset="utf-8">
+
+	<!-- styles
+	======================================================== -->
+	<!-- Style -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<style>
+		.nav li {
+			position: relative;
+		}
+		.nav li .nav {
+			position: absolute;
+			width: 300px; /* TAMANHO QUE VOCÊ DESEJA - Para ser corrido abaixo deixe apenas sem esse valor */
+			display: none;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Module
+	======================================================== -->
+	<div class="l-container cf">
+		<h1>Dropdown Menu</h1>
+		<ul class="nav">
+			<li>
+				<a href="#">Trecho</a>
+				<ul class="nav">
+					<li><a href="#">Trecho</a></li>
+					<li><a href="#">Trecho</a></li>
+					<li>
+						<a href="#">Trecho</a>
+							<ul class="nav">
+								<li>
+									<a href="#">Trecho</a>
+										<ul class="nav">
+											<li><a href="#">Trecho</a></li>
+											<li><a href="#">Trecho</a></li>
+											<li><a href="#">Trecho</a></li>
+											<li>
+												<a href="#">Trecho</a>
+													<ul class="nav">
+														<li><a href="#">Trecho</a></li>
+														<li><a href="#">Trecho</a></li>
+														<li>
+															<a href="#">Trecho</a>
+																<ul class="nav">
+																	<li><a href="#">Trecho</a></li>
+																	<li><a href="#">Trecho</a></li>
+																	<li><a href="#">Trecho</a></li>
+																	<li><a href="#">Trecho</a></li>
+																	<li><a href="#">Trecho</a></li>
+																</ul>
+														</li>
+														<li><a href="#">Trecho</a></li>
+														<li><a href="#">Trecho</a></li>
+													</ul>
+											</li>
+											<li><a href="#">Trecho</a></li>
+										</ul>
+								</li>
+								<li><a href="#">Trecho</a></li>
+								<li><a href="#">Trecho</a></li>
+								<li><a href="#">Trecho</a></li>
+								<li><a href="#">Trecho</a></li>
+							</ul>
+					</li>
+					<li><a href="#">Trecho</a></li>
+					<li><a href="#">Trecho</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Trecho</a></li>
+			<li>
+				<a href="#">Trecho</a>
+					<ul class="nav">
+						<li><a href="#">Trecho</a></li>
+						<li><a href="#">Trecho</a></li>
+						<li><a href="#">Trecho</a></li>
+						<li><a href="#">Trecho</a></li>
+						<li><a href="#">Trecho</a></li>
+					</ul>
+			</li>
+			<li><a href="#">Trecho</a></li>
+			<li><a href="#">Trecho</a></li>
+		</ul>
+	</div><!-- .l-container .cf -->
+
+	<!-- javascript
+	======================================================== -->
+	<!-- jquery jquery.com -->
+	<script src="assets/js/jquery.js?v=1.11.0"></script>
+	<!-- dropdown -->
+	<script src="assets/js/jquery.dropdown.js"></script>
+
+</body>
+</html>
