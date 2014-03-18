@@ -4,7 +4,7 @@
 
 	<title>PROJETO</title>
 
-	<!-- SEO
+	<!-- SEO rel="nofollow" on links
 	======================================================== -->
 	<meta name="robots" content="NOINDEX, nofollow" />	
 	<meta name="title" content="PROJETO">
@@ -16,6 +16,9 @@
 	<link rel="next" href="http://www.PROJETO.com.br/page/2/">
 
 	<?php include 'template/head.php'; ?>
+
+	<!-- modernizr modernizr.com -->
+	<script src="assets/min/modernizr.min.js"></script>
 
 </head>
 

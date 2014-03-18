@@ -1,7 +1,5 @@
 	<!-- javascript
 	======================================================== -->
-	<!-- modernizr modernizr.com -->
-	<script src="assets/min/modernizr.min.js"></script>
 	<!-- jquery jquery.com -->
 	<script src="assets/min/jquery.min.js?v=1.11.0"></script>
 	<!-- suiting -->

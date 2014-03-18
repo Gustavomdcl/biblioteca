@@ -4,7 +4,7 @@
 
 	<title>PROJETO</title>
 
-	<!-- description http://conversion.com.br
+	<!-- description http://conversion.com.br rel="nofollow" on links
 	======================================================== -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -73,6 +73,8 @@
 	<link rel="stylesheet" href="assets/css/adjust.css">
 	<!-- Font FONTE | font-family: 'FONTE', sans-serif; 
 	<link href='http://google.com/fonts' rel='stylesheet' type='text/css'> -->
+	<!-- modernizr modernizr.com -->
+	<script src="assets/min/modernizr.min.js"></script>
 
 </head>
 
@@ -163,8 +165,6 @@
 
 	<!-- javascript
 	======================================================== -->
-	<!-- modernizr modernizr.com -->
-	<script src="assets/min/modernizr.min.js"></script>
 	<!-- jquery jquery.com -->
 	<script src="assets/min/jquery.min.js?v=1.11.0"></script>
 	<!-- suiting -->
