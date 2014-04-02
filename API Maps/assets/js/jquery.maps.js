@@ -77,6 +77,19 @@ long_total=long_total/centro_mapa.length;
 			animation: google.maps.Animation.DROP,
 			icon: 'assets/img/map/map-marker.png'
 		});
+
+		//ADICIONA INFO NO MAPA ==============================================
+
+		var content = "";
+
+		var infotexto;
+
+		infotexto = new google.maps.InfoWindow({
+			content: content,
+    });
+
+		infotexto.open(map, marker[i]);
+		
 		// To add the marker to the map, call setMap();
 		marker[i].setMap(map);
 		//https://developers.google.com/maps/documentation/javascript/events?hl=pt-br

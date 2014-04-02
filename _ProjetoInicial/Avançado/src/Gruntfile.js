@@ -25,6 +25,7 @@ module.exports = function( grunt ) {
           /*force: true,
           config: '../assets/config.rb',
           outputStyle: 'compressed'*/
+          httpPath: 'fakepath/../../', /* SEMPRE ALTERAR */
           sassDir: '../assets/sass',
           cssDir: '../assets/css',
           imagesDir: '../assets/img',
