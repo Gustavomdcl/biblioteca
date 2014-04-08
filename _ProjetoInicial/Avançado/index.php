@@ -2,6 +2,8 @@
 <html lang="pt_BR">
 <head>
 
+	<meta charset="utf-8">
+
 	<title>PROJETO</title>
 
 	<!-- SEO rel="nofollow" on links
