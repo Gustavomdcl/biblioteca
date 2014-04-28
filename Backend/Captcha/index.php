@@ -27,7 +27,7 @@
 		tf = tamanho fonte das letras
 		ql = quantidade de letras do captcha
 		-->
-		<img src="captcha.php?l=150&a=50&tf=20&ql=5">
+		<img class="captcha" src="captcha.php?l=150&a=50&tf=20&ql=5">
 
 		<!--
 		O texto digitado no campo abaixo sera enviado via POST para
@@ -35,7 +35,7 @@
 		ao que foi gravado na sessao pelo captcha.php
 		-->
 		<form action="validar.php" name="form" method="post">
-		   <input type="text" name="palavra"  />
+		   <input type="text" name="palavra"  /><a class="captcha-refresh">reload</a><br>
 		   <input type="submit" value="Validar Captcha" />
 		</form>
 
@@ -46,6 +46,11 @@
 	======================================================== -->
 	<!-- jquery jquery.com -->
 	<script src="assets/js/jquery.js?v=1.11.0"></script>
+	<script>
+  $(".captcha-refresh").click(function(){
+    $(".captcha").attr('src', 'captcha.php?l=150&a=57&tf=20&ql=5');
+  });
+  </script>
 
 </body>
 </html>
