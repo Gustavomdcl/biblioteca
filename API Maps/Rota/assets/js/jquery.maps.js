@@ -41,7 +41,7 @@ long_total=long_total/centro_mapa.length;
 
 // /!\ =========================== INICIALIZAÇÃO DO GOOGLE MAPS =========================== /!\
 
-	var firstPoint = new google.maps.LatLng($("#mark-0").data('lat'), $("#mark-0").data('long'));
+  var firstPoint = new google.maps.LatLng($("#mark-0").data('lat'), $("#mark-0").data('long'));
 
   var mapOptions = {
 	mapTypeControlOptions: {
@@ -54,7 +54,7 @@ long_total=long_total/centro_mapa.length;
   };
 
   var directionsDisplay;
-	var directionsService = new google.maps.DirectionsService();
+  var directionsService = new google.maps.DirectionsService();
   var map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions,
 	  	styles);
@@ -85,8 +85,8 @@ long_total=long_total/centro_mapa.length;
 		var infotexto;
 
 		infotexto = new google.maps.InfoWindow({
-			content: content,
-    });
+				content: content,
+	    });
 
 		infotexto.open(map, marker[i]);
 		
